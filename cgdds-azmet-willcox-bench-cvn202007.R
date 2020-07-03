@@ -172,7 +172,7 @@ p <- ggplot(data = cgdds) +
   # Add the title, subtitle, axis labels, and caption
   ggtitle("Heat Accumulation") +
   labs(subtitle = "AZMET Willcox Bench station",
-       x = "\nDay of Year",
+       x = "\nDate",
        y = "Cumulative  Growing  Degree  Days\n",
        caption = paste0(
          "\ndata source: AZMET (cals.arizona.edu/azmet)",
