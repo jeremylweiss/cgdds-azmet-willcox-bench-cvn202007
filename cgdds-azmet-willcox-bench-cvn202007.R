@@ -230,7 +230,13 @@ p <- ggplot(data = cgdds) +
 p
 
 #  Save the figure as a .png file in the current directory
-ggsave("./cgdds-azmet-willcox-bench-cvn202007.eps",
+#ggsave("./cgdds-azmet-willcox-bench-cvn202007.eps",
+#       plot = p, device = cairo_pdf, path = NULL, scale = 1,
+#       width = 6, height = 4, units = "in", dpi = 300)
+
+ggsave(file = paste0("cgdds-azmet-willcox-bench-cvn-2020-", 
+                     Sys.Date(),
+                     ".eps"),
        plot = p, device = cairo_pdf, path = NULL, scale = 1,
        width = 6, height = 4, units = "in", dpi = 300)
 
